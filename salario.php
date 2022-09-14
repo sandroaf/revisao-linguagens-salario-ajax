@@ -17,7 +17,7 @@
    }
    
    if (fNaoPreenchido($_POST["iEndereco"])) {
-      $msg =  "<p>Erro: Endereço não informado</p>";
+      $msg = $msg."<p>Erro: Endereço não informado</p>";
       $erro = true;
    }
 
@@ -26,5 +26,4 @@
    } else {
       echo $msg;
    }
-   
 ?>
